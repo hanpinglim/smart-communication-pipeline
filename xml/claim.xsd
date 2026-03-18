@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="Claim">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ClaimNumber" type="xsd:string"/>
+        <xsd:element name="PolicyNumber" type="xsd:string"/>
+        <xsd:element name="ClaimType" type="xsd:string"/>
+        <xsd:element name="Amount">
+          <xsd:complexType>
+            <xsd:simpleContent>
+              <xsd:extension base="xsd:decimal">
+                <xsd:attribute name="currency" type="xsd:string" use="required"/>
+              </xsd:extension>
+            </xsd:simpleContent>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Status" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

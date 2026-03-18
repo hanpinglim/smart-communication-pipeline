@@ -1,0 +1,8 @@
+{
+  "claimNumber": "CLM9001",
+  "policyNumber": "POL1234",
+  "claimType": "Storm Damage",
+  "amount": "3200",
+  "currency": "AUD",
+  "status": "Open"
+}

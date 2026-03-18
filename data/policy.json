@@ -1,0 +1,8 @@
+{
+  "policyNumber": "POL1234",
+  "customerId": "CUST1001",
+  "type": "Home Insurance",
+  "premium": "450",
+  "currency": "AUD",
+  "startDate": "2026-04-06"
+}

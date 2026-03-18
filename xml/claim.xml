@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Claim>
+  <ClaimNumber>CLM9001</ClaimNumber>
+  <PolicyNumber>POL1234</PolicyNumber>
+  <ClaimType>Storm Damage</ClaimType>
+  <Amount currency="AUD">3200</Amount>
+  <Status>Open</Status>
+</Claim>

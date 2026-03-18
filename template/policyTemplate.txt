@@ -1,0 +1,7 @@
+Dear ${Name},
+
+Your ${Type} policy ${PolicyNumber} starts on ${StartDate}.
+Your premium is ${Currency} ${Premium}.
+
+Regards,
+Insurance Team

@@ -1,0 +1,9 @@
+Dear ${Name},
+
+We have received your claim ${ClaimNumber} for policy ${PolicyNumber}.
+Claim type: ${ClaimType}
+Claim amount: ${Currency} ${Amount}
+Current status: ${Status}
+
+Regards,
+Claims Team

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Policy>
+  <PolicyNumber>POL1234</PolicyNumber>
+  <CustomerId>CUST1001</CustomerId>
+  <Type>Home Insurance</Type>
+  <Premium currency="AUD">450</Premium>
+  <StartDate>2026-04-06</StartDate>
+</Policy>
