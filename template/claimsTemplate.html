@@ -1,11 +1,13 @@
 <html>
   <body>
     <h1>Claim Update</h1>
-    <p>Dear ${Name},</p>
-    <p>We have received your claim <strong>${ClaimNumber}</strong> for policy ${PolicyNumber}.</p>
-    <p>Claim type: ${ClaimType}</p>
-    <p>Claim amount: ${Currency} ${Amount}</p>
-    <p>Status: ${Status}</p>
+    <p>Dear {{Name}},</p>
+    <p>We have received your claim <strong>{{ClaimNumber}}</strong> for policy {{PolicyNumber}}.</p>
+    <p>Claim type: {{ClaimType}}</p>
+    <p>Claim amount: {{Currency}} {{Amount}}</p>
+    {{#if Status}}
+    <p>Status: {{Status}}</p>
+    {{/if}}
     <p>Regards,<br>Claims Team</p>
   </body>
 </html>

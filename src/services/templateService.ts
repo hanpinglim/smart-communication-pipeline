@@ -1,12 +1,6 @@
-export function fillTemplate(
-  template: string,
-  values: Record<string, string>
-): string {
-  let output = template;
+import Handlebars from "handlebars";
 
-  for (const key in values) {
-    output = output.replace(new RegExp(`\\$\\{${key}\\}`, "g"), values[key]);
-  }
-
-  return output;
+export function compileTemplate(template: string, data: any): string {
+  const compiled = Handlebars.compile(template);
+  return compiled(data);
 }

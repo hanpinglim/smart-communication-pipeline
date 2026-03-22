@@ -2,7 +2,7 @@ import fs from "fs";
 import { Customer } from "../models/Customer";
 import { Policy } from "../models/Policy";
 import { Claim } from "../models/Claim";
-import { fillTemplate } from "./templateService";
+import { compileTemplate } from "./templateService";
 
 export function generatePolicyLetter(
   templatePath: string,
@@ -11,14 +11,14 @@ export function generatePolicyLetter(
 ): string {
   const template = fs.readFileSync(templatePath, "utf-8");
 
-  return fillTemplate(template, {
+  return compileTemplate(template, {
     Name: customer.name,
     PolicyNumber: policy.policyNumber,
     Type: policy.type,
     Premium: policy.premium,
     Currency: policy.currency,
     StartDate: policy.startDate
-  });
+});
 }
 
 export function generateClaimLetter(
@@ -28,7 +28,7 @@ export function generateClaimLetter(
 ): string {
   const template = fs.readFileSync(templatePath, "utf-8");
 
-  return fillTemplate(template, {
+  return compileTemplate(template, {
     Name: customer.name,
     ClaimNumber: claim.claimNumber,
     PolicyNumber: claim.policyNumber,
